@@ -1,5 +1,7 @@
 # Singularity containers for SU2
 
+Containers to run SU2 with openmpi 1.10.2
+
 ## Local
 ~~~~
 mpirun -np 6 singularity exec su2_containers_master.sif /SU2/bin/SU2_CFD SU2.cfg > log.txt
