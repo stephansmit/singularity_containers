@@ -4,6 +4,7 @@ From: ubuntu:16.04
 %post
     apt-get -y update
     apt-get -y install python3 git build-essential autoconf python-dev libopenmpi-dev openmpi-common openmpi-bin
+    apt-get install -y dkms infiniband-diags libibverbs* ibacm librdmacm* libmlx4* libmlx5* mstflint libibcm.* libibmad.* libibumad* opensm srptools rdmacm-utils ibverbs-utils perftest vlan ibutils 
     git clone --depth=1 https://github.com/su2code/SU2
     cd SU2
     autoreconf -i
