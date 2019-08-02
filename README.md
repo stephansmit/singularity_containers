@@ -1,6 +1,12 @@
 # Singularity containers for SU2
 
-Containers to run SU2 with openmpi 1.10.2
+Containers to run SU2 with openmpi 1.10.2.
+
+To pull a container
+
+~~~~
+singularity pull shub://stephansmit/su2_containers:master
+~~~~
 
 ## Local
 ~~~~
