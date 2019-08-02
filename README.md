@@ -1,20 +1,19 @@
 # Singularity containers for SU2
 
-Containers to run SU2 with openmpi 1.10.2.
+Containers to run [SU2](https://su2code.github.io/) with [Open MPI](https://www.open-mpi.org/) version 1.10.2.
 
-To pull a container
-
+## Pull a container
 ~~~~
 singularity pull shub://stephansmit/su2_containers:master
 ~~~~
 
-## Local
+## Run Local
 ~~~~
 mpirun -np 6 singularity exec su2_containers_master.sif /SU2/bin/SU2_CFD SU2.cfg > log.txt
 ~~~~
 
 
-## SurfSara
+## Run SurfSara
 ~~~~
 #!/bin/bash
 #SBATCH -N 2
