@@ -1,7 +1,7 @@
 # Singularity containers for SU2
 
 Containers to run [SU2](https://su2code.github.io/) with [Open MPI](https://www.open-mpi.org/) version 1.10.2.
-[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/3334)
+
 ## Pull a container
 ~~~~
 singularity pull shub://stephansmit/su2_containers:master
@@ -23,3 +23,7 @@ mpirun -np 6 singularity exec su2_containers_master.sif /SU2/bin/SU2_CFD SU2.cfg
 module load mpi/openmpi/1.10.2
 mpirun --hostfile hostfile.txt -np 40 singularity exec su2_containers_master.sif /SU2/bin/SU2_CFD SU2.cfg > log.txt
 ~~~~
+
+Hosted on Singularity Hub:
+
+[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/3334)
