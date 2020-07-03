@@ -24,6 +24,7 @@ From: ubuntu:16.04
     ln -s /usr/bin/python3 /usr/bin/python
     
     echo "Install python3 requirements for SU2"
+    python3 -m pip install  --target=/usr/lib/python3/dist-packages/ --upgrade pip 
     python3 -m pip install  --target=/usr/lib/python3/dist-packages/ mpi4py numpy scipy 
 
     echo "Install requirements for infiniband on surfsara"
